@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <div class="alert alert-success" ng-show="statusbar">{{message}}</div>
+        <h3 class="text-center"><strong>Create</strong> an Account</h3>
+        <table class="table">
+        <tr>
+            <td>Username</td>
+            <td><input type="text" data-ng-model="username" class="form-control" placeholder="Username"></td>
+        </tr>
+        
+        <tr>
+            <td>Password</td>
+            <td><input type="password" data-ng-model="password" class="form-control" placeholder="Password"></td>
+        </tr>    
+        <tr>
+            <td>email</td>
+            <td><input type="text" data-ng-model="roll" class="form-control" placeholder="email"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button type="submit" class="btn btn-primary" data-ng-click="createAccount(username, password, roll)">Create account</button></td>
+            <td><a href="#/login" class="btn btn-info" style="align-content: center">Login</a></td>
+        </tr>
+
+        </table>
+    </div>
+</div>
+
+
